@@ -42,7 +42,7 @@ AMoverExamplesCharacter::AMoverExamplesCharacter(const FObjectInitializer& Objec
 }
 
 /**
- * 组件初始化后调用
+ * AMoverExamplesCharacter的所有组件初始化后调用
  * 1. 查找并缓存CharacterMoverComponent引用
  * 2. 设置更新组件是否影响导航生成
  */

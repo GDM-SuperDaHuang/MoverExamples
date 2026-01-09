@@ -18,6 +18,12 @@ AMyMoverPawn::AMyMoverPawn(const FObjectInitializer& ObjectInitializer)
 
 	CapsuleComponent->InitCapsuleSize(34.f, 88.f);
 	CapsuleComponent->SetCollisionProfileName(TEXT("Pawn"));
+
+	/**
+	 * true：这个组件，是否会被 NavigationSystem 考虑为：
+	 * 1，动态障碍
+	 * 2，NavMesh 生成 / 更新的参与者
+	 */	
 	CapsuleComponent->SetCanEverAffectNavigation(true);
 
 	// =========================
