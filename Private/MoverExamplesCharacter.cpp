@@ -355,6 +355,7 @@ void AMoverExamplesCharacter::OnProduceInput(float DeltaMs, FMoverInputCmdContex
 	{
 		if (!bIsFlyingActive)
 		{
+			// QueueNextMode  SuggestedMovementMode 切换模式？？？？
 			CharacterInputs.SuggestedMovementMode = DefaultModeNames::Flying; // 建议切换到飞行模式
 		}
 		else

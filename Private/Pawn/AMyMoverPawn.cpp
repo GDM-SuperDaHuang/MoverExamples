@@ -41,6 +41,15 @@ AMyMoverPawn::AMyMoverPawn(const FObjectInitializer& ObjectInitializer)
 	AIControllerClass = AAIController::StaticClass();
 
 	bUseControllerRotationYaw = false;
+
+
+	// 注册不同的 Mode ？？？
+	// 添加特定的自定义移动模式
+    MoverComponent->AddMovementModeFromClass(TEXT("Walk"), UMyWalkingMode::StaticClass());
+    MoverComponent->AddMovementModeFromClass(TEXT("Fly"), UMyFlyingMode::StaticClass());
+ 
+    // 默认激活模式设定视需求而定
+    MoverComponent->SetMovementMode("Walk");
 }
 
 void AMyMoverPawn::BeginPlay()
