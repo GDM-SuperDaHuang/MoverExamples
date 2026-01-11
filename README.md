@@ -1,2 +1,5 @@
 # MoverExamples
 MoverExamples
+USimpleWalkingMode
+FCharacterDefaultInputs
+FProposedMove
